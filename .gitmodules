@@ -1,6 +1,3 @@
-[submodule "janus.symlink/janus"]
-	path = janus.symlink/janus
-	url = https://github.com/carlhuda/janus.git
 [submodule "janus.symlink/editorconfig-vim"]
 	path = janus.symlink/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
