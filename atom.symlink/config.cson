@@ -1,9 +1,11 @@
 "*":
   editor:
     fontFamily: "Menlo"
-    fontSize: 15
     showIndentGuide: true
     invisibles: {}
+    softWrapAtPreferredLineLength: true
+    softWrap: true
+    fontSize: 21
   core:
     ignoredNames: [
       ".bundle"
