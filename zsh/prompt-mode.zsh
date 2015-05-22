@@ -1,1 +1,2 @@
 bindkey -e
+stty -ixon
