@@ -2,7 +2,8 @@
   editor:
     fontFamily: "Menlo"
     showIndentGuide: true
-    invisibles: {}
+    invisibles:
+      {}
     softWrapAtPreferredLineLength: true
     softWrap: true
     fontSize: 12
@@ -22,8 +23,8 @@
       "linter-clojure"
     ]
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "atom-dark-ui"
+      "solarized-light-syntax"
     ]
   "spell-check":
     grammars: [
@@ -35,5 +36,7 @@
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
-  "go-plus": {}
-  "linter-clojure": {}
+  "go-plus":
+    {}
+  "linter-clojure":
+    {}
