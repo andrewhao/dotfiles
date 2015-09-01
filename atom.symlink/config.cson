@@ -2,11 +2,10 @@
   editor:
     fontFamily: "Menlo"
     showIndentGuide: true
-    invisibles:
-      {}
+    invisibles: {}
     softWrapAtPreferredLineLength: true
     softWrap: true
-    fontSize: 12
+    fontSize: 13
   core:
     ignoredNames: [
       ".bundle"
@@ -36,7 +35,5 @@
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
-  "go-plus":
-    {}
-  "linter-clojure":
-    {}
+  "go-plus": {}
+  "linter-clojure": {}
