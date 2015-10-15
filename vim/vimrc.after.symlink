@@ -1,2 +1,19 @@
 "" Custom vimrc
 set wildignore+=*node_modules/*
+autocmd FileType vim setlocal keywordprg=:help
+autocmd FileType ruby setlocal keywordprg=ri
+
+map <leader>cn :cnext<cr>
+map <leader>cp :cprev<cr>
+map <leader>co :copen<cr>
+map <leader>cc :ccl<cr>
+
+nmap fw :grep -r <cword> . <cr>
+
+autocmd FileType ruby nmap <buffer> <leader>sc :cexpr system('ruby -c ' . bufname("%"))<cr>
+autocmd FileType ruby nmap <buffer> <leader>li :cexpr system('rubocop ' . bufname("%"))<cr>
+
+set tags=.ctags;$HOME
+nmap <leader>tt :execute "!ctags -R -f ./.ctags ."<cr>
+nmap gd <C-]>
+nmap gb <C-t>
