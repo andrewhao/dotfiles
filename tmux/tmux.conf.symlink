@@ -51,3 +51,4 @@ set -g mouse-select-window on
 # where a window is only constrained in size if a smaller client is actively
 # looking at it. This behaviour can be fixed by setting tmux's aggressive-resize option.
 setw -g aggressive-resize on
+
