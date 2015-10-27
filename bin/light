@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# light - Highlight files for pasting into keynote and other places
+#
+# Put this anywhere on your $PATH (~/bin is recommended).
+#
+# Hightlight is required for this script to work. Install with your favorite
+# package manager
+#
+# Highlight file with specific language
+#   $ light ruby example_file.rb
+
+set -e
+
+if [ -z "$2" ]
+  then src="pbpaste"
+else
+  src="cat $2"
+fi
+
+
+$src | highlight -O rtf --syntax $1 --font "Fira Code" --font-size 50 --style solarized-light | pbcopy
