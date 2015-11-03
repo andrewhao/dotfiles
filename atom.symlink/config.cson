@@ -22,8 +22,8 @@
       "linter-clojure"
     ]
     themes: [
-      "atom-dark-ui"
-      "solarized-light-syntax"
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
     ]
   "spell-check":
     grammars: [

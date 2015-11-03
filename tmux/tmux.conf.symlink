@@ -52,3 +52,7 @@ set -g mouse-select-window on
 # looking at it. This behaviour can be fixed by setting tmux's aggressive-resize option.
 setw -g aggressive-resize on
 
+# Window split
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}"
