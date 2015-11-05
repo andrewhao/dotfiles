@@ -30,3 +30,7 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 let g:EasyMotion_use_smartsign_us = 1 " US layout
+
+"" Smash escape
+inoremap jk <Esc>
+inoremap kj <Esc>
