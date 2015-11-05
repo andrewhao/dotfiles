@@ -1,4 +1,8 @@
 "" Custom vimrc
+
+"" Comma is leader.
+let mapleader = ","
+
 set wildignore+=*node_modules/*
 autocmd FileType vim setlocal keywordprg=:help
 autocmd FileType ruby setlocal keywordprg=ri
@@ -17,3 +21,4 @@ set tags=.ctags;$HOME
 nmap <leader>tt :execute "!ctags -R -f ./.ctags ."<cr>
 nmap gd <C-]>
 nmap gb <C-t>
+
