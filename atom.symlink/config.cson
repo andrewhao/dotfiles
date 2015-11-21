@@ -5,7 +5,8 @@
     invisibles: {}
     softWrapAtPreferredLineLength: true
     softWrap: true
-    fontSize: 13
+    autoIndent: false
+    fontSize: 12
   core:
     ignoredNames: [
       ".bundle"
@@ -20,6 +21,7 @@
       "exception-reporting"
       "metrics"
       "linter-clojure"
+      "vim-mode"
     ]
     themes: [
       "one-dark-ui"

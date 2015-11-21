@@ -1,7 +1,7 @@
 "" Custom vimrc
 
 "" Comma is leader.
-let mapleader = ","
+let mapleader = "\<space>"
 
 set wildignore+=*node_modules/*
 autocmd FileType vim setlocal keywordprg=:help
