@@ -34,3 +34,8 @@ let g:EasyMotion_use_smartsign_us = 1 " US layout
 "" Smash escape
 inoremap jk <Esc>
 inoremap kj <Esc>
+
+"" Powerline
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
