@@ -3,8 +3,6 @@
     fontFamily: "Fira Code"
     showIndentGuide: true
     invisibles: {}
-    softWrapAtPreferredLineLength: true
-    softWrap: true
     autoIndent: false
     fontSize: 12
   core:
@@ -21,7 +19,6 @@
       "exception-reporting"
       "metrics"
       "linter-clojure"
-      "vim-mode"
     ]
     themes: [
       "one-dark-ui"
@@ -39,3 +36,6 @@
     viewedVersion: "0.89.0"
   "go-plus": {}
   "linter-clojure": {}
+  "vim-mode": {}
+  "linter-scss-lint":
+    executablePath: " /opt/boxen/rbenv/shims/scss-lint"
