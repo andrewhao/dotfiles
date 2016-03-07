@@ -1,11 +1,11 @@
 "*":
-  editor:
-    fontFamily: "Fira Code"
-    showIndentGuide: true
-    invisibles: {}
-    autoIndent: false
-    fontSize: 12
   core:
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "linter-clojure"
+    ]
     ignoredNames: [
       ".bundle"
       ".git"
@@ -14,28 +14,30 @@
       "tmp"
       "vendor"
     ]
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-      "linter-clojure"
-    ]
     themes: [
       "one-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
+  editor:
+    autoIndent: false
+    fontFamily: "Fira Code"
+    fontSize: 15
+    invisibles: {}
+    showIndentGuide: true
+  "go-plus": {}
+  iex:
+    colors: {}
+  "linter-clojure": {}
+  "linter-scss-lint":
+    executablePath: " /opt/boxen/rbenv/shims/scss-lint"
+  "release-notes":
+    viewedVersion: "0.89.0"
   "spell-check":
     grammars: [
       "text.plain"
       "source.gfm"
       "text.git-commit"
     ]
+  "vim-mode": {}
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "go-plus": {}
-  "linter-clojure": {}
-  "vim-mode": {}
-  "linter-scss-lint":
-    executablePath: " /opt/boxen/rbenv/shims/scss-lint"
