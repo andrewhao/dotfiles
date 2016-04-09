@@ -23,7 +23,7 @@ nmap gd <C-]>
 nmap gb <C-t>
 
 "" Easymotion
-map <Leader> <Plug>(easymotion-prefix)
+"" map <Leader> <Plug>(easymotion-prefix)
 map <Leader>/ <Plug>(easymotion-sn)
 omap <Leader>/ <Plug>(easymotion-tn)
 map <Leader>j <Plug>(easymotion-j)

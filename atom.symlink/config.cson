@@ -19,11 +19,11 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    autoIndent: false
     fontFamily: "Fira Code"
     fontSize: 15
     invisibles: {}
     showIndentGuide: true
+    tabType: "soft"
   "go-plus": {}
   iex:
     colors: {}
