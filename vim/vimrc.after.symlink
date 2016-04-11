@@ -3,7 +3,7 @@
 "" Comma is leader.
 let mapleader = ","
 
-set wildignore+=*node_modules/*
+set wildignore+=*node_modules/*,*_build/*,*deps/*
 autocmd FileType vim setlocal keywordprg=:help
 autocmd FileType ruby setlocal keywordprg=ri
 
@@ -23,7 +23,7 @@ nmap gd <C-]>
 nmap gb <C-t>
 
 "" Easymotion
-"" map <Leader> <Plug>(easymotion-prefix)
+map <Leader> <Plug>(easymotion-prefix)
 map <Leader>/ <Plug>(easymotion-sn)
 omap <Leader>/ <Plug>(easymotion-tn)
 map <Leader>j <Plug>(easymotion-j)
@@ -31,7 +31,12 @@ map <Leader>k <Plug>(easymotion-k)
 
 let g:EasyMotion_use_smartsign_us = 1 " US layout
 
-"" Smash escape
+"" vim-wheel
+let g:wheel#map#up   = '<C-K>'
+let g:wheel#map#down = '<C-J>'
+let g:wheel#map#mouse = 1
+
+"" Smash e%scape
 inoremap jk <Esc>
 inoremap kj <Esc>
 
