@@ -142,9 +142,9 @@ kwmc bind cmd+ctrl-d space -t float
 kwmc bind cmd+ctrl-r tree rotate 90
 
 # Modify Container
-kwmc bind prefix-" window -c split-mode toggle
-kwmc bind prefix-H window -c reduce 0.05
-kwmc bind prefix-L window -c expand 0.05
+kwmc bind prefix-2 window -c split-mode toggle
+kwmc bind prefix-, window -c reduce 0.05
+kwmc bind prefix-. window -c expand 0.05
 kwmc bind prefix-< window -c type toggle
 
 # Set Temporary Window Container
@@ -164,14 +164,13 @@ kwmc bind cmd+alt+ctrl-k window -mk north wrap
 # kwmc bind cmd+alt-l window -f east
 # kwmc bind cmd+alt-j window -f south
 # kwmc bind cmd+alt-k window -f north
-#
 kwmc bind prefix-h window -f west
 kwmc bind prefix-l window -f east
 kwmc bind prefix-j window -f south
 kwmc bind prefix-k window -f north
 
-# kwmc bind cmd+alt-n window -fm prev
-# kwmc bind cmd+alt-m window -fm next
+kwmc bind prefix-n window -fm prev
+kwmc bind prefix-p window -fm next
 
 # Give Focus To Screen
 kwmc bind cmd+alt-1 display -f 0
