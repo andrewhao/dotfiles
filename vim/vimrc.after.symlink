@@ -1,5 +1,8 @@
 "" Custom vimrc
 
+"" Set default spacing prefs.
+set tabstop=2 shiftwidth=2 expandtab
+
 "" Comma is leader.
 let mapleader = ","
 
