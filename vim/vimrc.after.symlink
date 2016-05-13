@@ -31,14 +31,24 @@ map <Leader>k <Plug>(easymotion-k)
 
 let g:EasyMotion_use_smartsign_us = 1 " US layout
 
+"" vim-airline
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
 "" vim-wheel
 let g:wheel#map#up   = '<C-K>'
 let g:wheel#map#down = '<C-J>'
 let g:wheel#map#mouse = 1
 
-"" Smash e%scape
-inoremap jk <Esc>
-inoremap kj <Esc>
+"" enable the mouse
+set mouse=a
+set ttymouse=xterm2
+
+"" Smash escape. Eh... I actually kind of hate it.. Eh... I actually kind of hate it.
+"" inoremap jk <Esc>
+"" inoremap kj <Esc>
 
 "" Powerline
 python from powerline.vim import setup as powerline_setup
@@ -47,5 +57,5 @@ python del powerline_setup
 
 "" Nice powerline defaults
 let laststatus=2 " Always display the statusline in all windows
-"set showtabline=2 " Always display the tabline, even if there is only one tab
+" set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
