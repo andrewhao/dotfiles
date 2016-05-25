@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Right-Alt + esdf arrow keys</name>
+    <identifier>private.esdf_arrows</identifier>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::OPTION_R, KeyCode::CURSOR_UP </autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::OPTION_R, KeyCode::CURSOR_LEFT </autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::OPTION_R, KeyCode::CURSOR_DOWN </autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::OPTION_R, KeyCode::CURSOR_RIGHT </autogen>
+    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::OPTION_R, KeyCode::PAGEUP </autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::OPTION_R, KeyCode::PAGEDOWN </autogen>
+  </item>
+</root>
