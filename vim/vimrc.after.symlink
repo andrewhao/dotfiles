@@ -26,11 +26,11 @@ nmap gd <C-]>
 nmap gb <C-t>
 
 "" Easymotion
-map <Leader> <Plug>(easymotion-prefix)
-map <Leader>/ <Plug>(easymotion-sn)
-omap <Leader>/ <Plug>(easymotion-tn)
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
+"map <Leader> <Plug>(easymotion-prefix)
+"map <Leader>/ <Plug>(easymotion-sn)
+"omap <Leader>/ <Plug>(easymotion-tn)
+"map <Leader>j <Plug>(easymotion-j)
+"map <Leader>k <Plug>(easymotion-k)
 
 let g:EasyMotion_use_smartsign_us = 1 " US layout
 
@@ -62,3 +62,7 @@ python del powerline_setup
 let laststatus=2 " Always display the statusline in all windows
 " set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+" Use fzf as filefinder.
+set rtp+=/opt/boxen/homebrew/opt/fzf
+
