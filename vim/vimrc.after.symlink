@@ -15,6 +15,9 @@ map <leader>cp :cprev<cr>
 map <leader>co :copen<cr>
 map <leader>cc :ccl<cr>
 
+"" Over-ride: Ctrl-p opens FZF
+map <C-p> :FZF<cr>
+
 nmap fw :grep -r <cword> . <cr>
 
 autocmd FileType ruby nmap <buffer> <leader>sc :cexpr system('ruby -c ' . bufname("%"))<cr>
@@ -63,6 +66,5 @@ let laststatus=2 " Always display the statusline in all windows
 " set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
-" Use fzf as filefinder.
-set rtp+=/opt/boxen/homebrew/opt/fzf
-
+" Remap ctrlp to ctrl-t
+let g:ctrlp_map = '<C-t>'
