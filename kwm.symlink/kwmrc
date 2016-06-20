@@ -95,7 +95,7 @@ kwmc config add-role AXDialog iTerm2
 # blacklists an application from Kwms tiling
 #
 # kwmc rule owner="Steam" properties={float="true"}
-# kwmc rule owner="Photoshop" properties={float="true"}
+kwmc rule owner="LICEcap" properties={float="true"}
 
 # The following command creates a rule that
 # captures an application to the given screen,
@@ -127,7 +127,7 @@ kwmc config prefix-border radius 6
 kwmc bind cmd+alt+ctrl-q quit
 
 # Launch iTerm2
-kwmc bind cmd-return sys open -na /Applications/iTerm2.app
+#kwmc bind cmd-return sys open -na /Applications/iTerm2.app
 
 # Set Space Tiling Mode To BSP
 kwmc bind cmd+alt-a space -t bsp
@@ -169,13 +169,15 @@ kwmc bind prefix-l window -f east
 kwmc bind prefix-j window -f south
 kwmc bind prefix-k window -f north
 
-kwmc bind prefix-n window -fm prev
-kwmc bind prefix-p window -fm next
+#kwmc bind prefix-n window -fm prev
+#kwmc bind prefix-p window -fm next
 
 # Give Focus To Screen
-kwmc bind cmd+alt-1 display -f 0
-kwmc bind cmd+alt-2 display -f 1
-kwmc bind cmd+alt-3 display -f 2
+#kwmc bind cmd+alt-1 display -f 0
+#kwmc bind cmd+alt-2 display -f 1
+#kwmc bind cmd+alt-3 display -f 2
+kwmc bind prefix-n display -f 0
+kwmc bind prefix-p display -f 1
 
 # Swap Focused Window
 kwmc bind prefix+ctrl-h window -s west
@@ -229,6 +231,6 @@ kwmc bind ctrl+alt-3 window -m display 2
 # kwmc bind prefix+shift-p space -p decrease all
 
 # Autowrite
-kwmc bind cmd-7 write \
-kwmc bind cmd-8 write {
-kwmc bind cmd-9 write }
+#kwmc bind cmd-7 write \
+#kwmc bind cmd-8 write {
+#kwmc bind cmd-9 write }
