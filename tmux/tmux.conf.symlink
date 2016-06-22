@@ -4,6 +4,11 @@ bind l select-pane -R
 bind j select-pane -D
 bind k select-pane -U
 
+bind s resize-pane -L 15
+bind d resize-pane -D 15
+bind e resize-pane -U 15
+bind f resize-pane -R 15
+
 # clock
 set-window-option -g clock-mode-colour colour64 #green
 
