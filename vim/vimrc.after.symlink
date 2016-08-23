@@ -90,3 +90,9 @@ map <Leader>vx :VimuxInterruptRunner<CR>
 " Zoom the runner pane (use <bind-key> z to restore runner pane)
 map <Leader>vz :call VimuxZoomRunner()<CR>
 
+" Syntastic customizations
+let g:syntastic_javascript_checkers = []
+
+" Use ag for vim-ack
+" https://github.com/mileszs/ack.vim#can-i-use-ag-the-silver-searcher-with-this
+let g:ackprg = 'ag --vimgrep'
