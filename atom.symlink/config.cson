@@ -5,6 +5,9 @@
       "exception-reporting"
       "metrics"
       "linter-clojure"
+      "vim-mode"
+      "linter-jscs"
+      "linter-jshint"
     ]
     ignoredNames: [
       ".bundle"
@@ -19,8 +22,9 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
+    autoIndent: false
     fontFamily: "Fira Code"
-    fontSize: 13
+    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     tabType: "soft"
