@@ -114,3 +114,9 @@ highlight link SyntasticStyleWarningSign SignColumn
 " Use ag for vim-ack
 " https://github.com/mileszs/ack.vim#can-i-use-ag-the-silver-searcher-with-this
 let g:ackprg = 'ag --vimgrep'
+
+" persistent undo
+if has('persistent_undo')
+  set undodir=$HOME/.undo
+  set undofile
+endif
