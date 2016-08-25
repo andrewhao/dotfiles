@@ -1,0 +1,3 @@
+set -e
+
+git log --all -M -C --name-only --format='format:' "$@" --since "1 month ago" | sort | grep -v '^$' | uniq -c | sort -nr | awk 'BEGIN {print "count\tfile"} {print $1 "\t" $2}'
