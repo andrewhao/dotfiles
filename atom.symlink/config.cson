@@ -24,7 +24,6 @@
   editor:
     autoIndent: false
     fontFamily: "Fira Code"
-    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     tabType: "soft"
