@@ -35,6 +35,10 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
+## ahao's addendum
+
+    $ brew bundle
+
 ## topical
 
 Everything's built around topic areas. If you're adding a new area to your

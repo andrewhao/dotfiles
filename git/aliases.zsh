@@ -17,3 +17,6 @@ alias gco='git checkout'
 alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gst='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias gpo='git pull origin'
+alias gdel='git branch --merged | egrep -v "(^\*|master|develop)" | xargs git branch -d'
+alias gpo='git pull origin'
