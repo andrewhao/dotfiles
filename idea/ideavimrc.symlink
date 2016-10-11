@@ -1,0 +1,4 @@
+set ignorecase smartcase
+set showmode
+set history=1000
+set incsearch
