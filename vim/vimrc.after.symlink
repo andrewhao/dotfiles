@@ -24,7 +24,7 @@ autocmd FileType ruby nmap <buffer> <leader>sc :cexpr system('ruby -c ' . bufnam
 autocmd FileType ruby nmap <buffer> <leader>li :cexpr system('rubocop ' . bufname("%"))<cr>
 
 set tags=.ctags;$HOME
-nmap <leader>tt :execute "!ctags -R -f ./.ctags ."<cr>
+nmap <leader>tt :execute "!ctags -R --exclude=@/Users/andrewhao/.ctagsignore -f ./.ctags ."<cr>
 nmap gd <C-]>
 nmap gb <C-t>
 
