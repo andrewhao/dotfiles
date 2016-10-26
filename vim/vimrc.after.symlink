@@ -120,3 +120,6 @@ if has('persistent_undo')
   set undodir=$HOME/.undo
   set undofile
 endif
+
+" Never get smaller than 80 chars
+set winwidth=80
