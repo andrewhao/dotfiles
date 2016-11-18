@@ -43,5 +43,3 @@ unset config_files
 [ -f /Users/andrewhao/.travis/travis.sh ] && source /Users/andrewhao/.travis/travis.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f ~/.asdf ] && . $HOME/.asdf/asdf.sh
-[ -f ~/.asdf ] && . $HOME/.asdf/completions/asdf.bash
