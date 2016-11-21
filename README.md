@@ -37,7 +37,15 @@ this script in `bin/`.
 
 ## ahao's addendum
 
+### Install all extra Brew packages here.
+
     $ brew bundle
+
+### vim plugins managed by Janus
+
+    $ curl -L https://bit.ly/janus-bootstrap | bash
+
+Note that actual Janus plugins are managed by these dotfiles, so after you install Janus, you will need to run this repository's `script/bootstrap` script to blow away the installed Janus folder.
 
 ## topical
 
