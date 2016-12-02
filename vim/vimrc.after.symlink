@@ -123,3 +123,6 @@ endif
 
 " Never get smaller than 80 chars
 set winwidth=80
+
+" System clipboard sharing
+set clipboard=unnamed
