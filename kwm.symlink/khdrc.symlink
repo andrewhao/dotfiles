@@ -10,8 +10,14 @@ khd mode prefix timeout 0.75
 khd mode prefix restore default
 khd mode prefix color 0xFF458588
 
+khd mode resize prefix on
+khd mode resize color 0xddbdd322
+khd mode resize timeout 0.75
+khd mode resize restore default
+
 # Activate prefix mode
 ctrl - s                 :    khd -e "mode activate prefix"
+ctrl - q                 :   khd -e "mode activate resize"
 
 # Quit Kwm
 cmd + alt + ctrl - q     :    kwmc quit
@@ -63,9 +69,12 @@ prefix-n                 :    kwmc display -f next
 prefix-p                 :    kwmc display -f prev
 
 # Modify Container
-# prefix-'                 :    kwmc window -c split-mode toggle
-prefix-1                 :    kwmc window -c reduce 0.05 west
-prefix-2                 :    kwmc window -c expand 0.05 west
-prefix-3                 :    kwmc window -c reduce 0.05 north
-prefix-4                 :    kwmc window -c expand 0.05 north
-# prefix-<                 :    kwmc window -c type toggle
+# Actual resize commands
+prefix - left                :   kwmc window -c expand 0.05 west
+prefix + shift - left        :   kwmc window -c reduce 0.05 west
+prefix - down                :   kwmc window -c expand 0.05 south
+prefix + shift - down        :   kwmc window -c reduce 0.05 south
+prefix - up                  :   kwmc window -c expand 0.05 north
+prefix + shift - up          :   kwmc window -c reduce 0.05 north
+prefix - right               :   kwmc window -c expand 0.05 east
+prefix + shift - right       :   kwmc window -c reduce 0.05 east
