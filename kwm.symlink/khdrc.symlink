@@ -59,5 +59,13 @@ prefix-d                 :    kwmc window -z parent
 prefix-w                 :    kwmc window -t focused
 
 # Move Display Focus
-prefix-n                 :    kwmc display -f 0
-prefix-p                 :    kwmc display -f 1
+prefix-n                 :    kwmc display -f next
+prefix-p                 :    kwmc display -f prev
+
+# Modify Container
+# prefix-'                 :    kwmc window -c split-mode toggle
+prefix-1                 :    kwmc window -c reduce 0.05 west
+prefix-2                 :    kwmc window -c expand 0.05 west
+prefix-3                 :    kwmc window -c reduce 0.05 north
+prefix-4                 :    kwmc window -c expand 0.05 north
+# prefix-<                 :    kwmc window -c type toggle
