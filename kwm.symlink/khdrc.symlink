@@ -53,7 +53,11 @@ ctrl + shift - l         :    kwmc window -m east
 ctrl + shift - j         :    kwmc window -m south
 ctrl + shift - h         :    kwmc window -m west
 
-# Move Focused Window To Screen
-ctrl + alt - 1           :    kwmc window -m display 0
-ctrl + alt - 2           :    kwmc window -m display 1
-ctrl + alt - 3           :    kwmc window -m display 2
+# Set Temporary Window Container
+prefix-f                 :    kwmc window -z fullscreen
+prefix-d                 :    kwmc window -z parent
+prefix-w                 :    kwmc window -t focused
+
+# Move Display Focus
+prefix-n                 :    kwmc display -f 0
+prefix-p                 :    kwmc display -f 1
