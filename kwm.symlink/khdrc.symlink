@@ -46,6 +46,8 @@ prefix+ctrl-j           :    kwmc window -s south
 prefix+ctrl-k           :    kwmc window -s north
 prefix+ctrl-l           :    kwmc window -s east
 prefix+ctrl-m           :    kwmc window -s mark
+prefix+ctrl-n           :    kwmc window -m display next
+prefix+ctrl-p           :    kwmc window -m display prev
 
 # Pseudo containers
 cmd + ctrl + alt - p     :    kwmc tree -pseudo create
