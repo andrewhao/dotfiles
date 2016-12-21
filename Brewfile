@@ -24,5 +24,6 @@ brew 'keybase'
 brew 'mysql'
 brew 'nodenv'
 brew 'phantomjs'
+brew 'wemux'
 
 cask 'keybase'
