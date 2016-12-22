@@ -25,5 +25,6 @@ brew 'mysql'
 brew 'nodenv'
 brew 'phantomjs'
 brew 'wemux'
+brew 'heroku-toolbelt'
 
 cask 'keybase'
