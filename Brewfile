@@ -6,7 +6,6 @@ tap 'koekeishiya/khd'
 
 brew 'diff-so-fancy'
 brew 'z'
-brew 'springboot'
 brew 'neovim/neovim/neovim'
 brew 'gpg-agent'
 brew 'the_silver_searcher'
