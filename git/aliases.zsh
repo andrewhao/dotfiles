@@ -20,4 +20,4 @@ alias gst='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gpo='git pull origin'
 alias gdel='git branch --merged | egrep -v "(^\*|master|develop)" | xargs git branch -d'
 alias gpo='git pull origin'
-alias grubo='git diff origin/master --name-only | xargs rubocop'
+alias grubo='git diff origin/master --name-only | grep rb | xargs bundle exec rubocop'
