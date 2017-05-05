@@ -93,6 +93,7 @@ kwmc rule owner="Finder" role="AXDialog" properties={float="true"}
 kwmc rule owner="System Preferences" properties={float="true"}
 kwmc rule owner="LICEcap" properties={float="true"}
 kwmc rule owner="Blue Jeans" properties={float="true"}
+kwmc rule owner="Dash" properties={float="true"}
 
 /* The following commands create rules that
    blacklists an application from Kwms tiling
