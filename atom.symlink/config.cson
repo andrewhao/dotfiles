@@ -8,6 +8,8 @@
       "vim-mode"
       "linter-jscs"
       "linter-jshint"
+      "symbols-view"
+      "screen-send"
     ]
     ignoredNames: [
       ".bundle"
@@ -23,8 +25,8 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    autoIndent: false
     fontFamily: "Fira Code"
+    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     tabType: "soft"
@@ -36,6 +38,7 @@
     executablePath: " /opt/boxen/rbenv/shims/scss-lint"
   "release-notes":
     viewedVersion: "0.89.0"
+  "rspec-iterm": {}
   "spell-check":
     grammars: [
       "text.plain"
