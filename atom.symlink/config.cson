@@ -5,7 +5,6 @@
       "exception-reporting"
       "metrics"
       "linter-clojure"
-      "vim-mode"
       "linter-jscs"
       "linter-jshint"
       "symbols-view"
