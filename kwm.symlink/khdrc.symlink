@@ -16,7 +16,7 @@ khd mode resize timeout 0.75
 khd mode resize restore default
 
 # Activate prefix mode
-ctrl - s                 :    khd -e "mode activate prefix"
+ctrl - i                 :    khd -e "mode activate prefix"
 ctrl - q                 :   khd -e "mode activate resize"
 
 # Quit Kwm
