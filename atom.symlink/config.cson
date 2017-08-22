@@ -1,4 +1,6 @@
 "*":
+  "atom-package-deps":
+    ignored: []
   core:
     disabledPackages: [
       "background-tips"
@@ -25,16 +27,31 @@
     ]
   editor:
     fontFamily: "Fira Code"
-    fontSize: 15
+    fontSize: 13
     invisibles: {}
     showIndentGuide: true
     tabType: "soft"
+  "elm-format":
+    binary: "/Users/andrewhao/.nodenv/shims/elm-format"
+  elmjutsu:
+    autocompleteDescriptionDisplay: "markdown"
+    autocompleteEnabled: true
+    autocompleteFuzzyFilteringEnabled: true
+    cacheDirectory: "/var/folders/yf/nwshn_sn44d6l00z8kskjrc80000gn/T/elmjutsu378446YKMC07KhyMQ"
+    globalAutocompleteEnabled: true
+    hyperclickEnabled: true
+    sidekickPosition: "right"
   "go-plus": {}
   iex:
     colors: {}
+  "language-elm":
+    autocompleteEnabled: false
   "linter-clojure": {}
   "linter-scss-lint":
     executablePath: " /opt/boxen/rbenv/shims/scss-lint"
+  "linter-ui-default":
+    panelHeight: 292
+    showPanel: true
   "release-notes":
     viewedVersion: "0.89.0"
   "rspec-iterm": {}
@@ -47,3 +64,6 @@
   "vim-mode": {}
   welcome:
     showOnStartup: false
+".elm.source":
+  editor:
+    autoIndentOnPaste: true
