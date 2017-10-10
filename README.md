@@ -47,6 +47,13 @@ this script in `bin/`.
 
 Note that actual Janus plugins are managed by these dotfiles, so after you install Janus, you will need to run this repository's `script/bootstrap` script to blow away the installed Janus folder.
 
+
+### Neovim config symlinking
+
+After install, do this symlink:
+
+    $ ln -s ~/.nvim ~/.config/nvim
+
 ## topical
 
 Everything's built around topic areas. If you're adding a new area to your
