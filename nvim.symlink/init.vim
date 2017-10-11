@@ -202,7 +202,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-grepper'
 Plug 'scrooloose/nerdcommenter'
 Plug 'elmcast/elm-vim'
-
+Plug 'tpope/vim-rails'
 Plug 'elixir-lang/vim-elixir'
 Plug 'thinca/vim-ref'
 Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
