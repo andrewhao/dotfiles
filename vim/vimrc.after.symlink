@@ -54,8 +54,8 @@ set mouse=a
 set ttymouse=xterm2
 
 "" Smash escape. Eh... I actually kind of hate it.. Eh... I actually kind of hate it.
-"" inoremap jk <Esc>
-"" inoremap kj <Esc>
+inoremap jkj <Esc>
+inoremap kjk <Esc>
 
 "" Powerline
 python from powerline.vim import setup as powerline_setup
