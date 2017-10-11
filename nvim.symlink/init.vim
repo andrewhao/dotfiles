@@ -135,6 +135,28 @@ let g:neoformat_elixir_exfmt = {
 
 let g:neoformat_enabled_elixir = ['exfmt']
 
+" Commenting a la NERDCommenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+" let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+" let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+" let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+" let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
 "Airline themes
 let g:airline#extensions#tabline#enabled = 2
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -148,6 +170,8 @@ let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
 "let g:airline_theme= 'gruvbox'
 
+" Elm
+let g:elm_format_autosave = 1
 
 " ---------------------------------------------------------------------
 " Installing Plugins
@@ -159,9 +183,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-projectionist'
 Plug 'avdgaag/vim-phoenix'
-Plug 'elixir-editors/vim-elixir'
 Plug 'mileszs/ack.vim'
 Plug 'benmills/vimux'
 Plug 'janko-m/vim-test'
@@ -175,6 +199,13 @@ Plug 'billyvg/tigris.nvim', { 'do': './install.sh' }
 Plug 'kchmck/vim-coffee-script'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'mhinz/vim-grepper'
+Plug 'scrooloose/nerdcommenter'
+Plug 'elmcast/elm-vim'
+
+Plug 'elixir-lang/vim-elixir'
+Plug 'thinca/vim-ref'
+Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
