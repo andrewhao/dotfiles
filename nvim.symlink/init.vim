@@ -173,6 +173,10 @@ let g:airline_right_alt_sep = '|'
 " Elm
 let g:elm_format_autosave = 1
 
+" Easymotion
+nmap <Leader>s <Plug>(easymotion-bd-f)
+nmap <Leader>w <Plug>(easymotion-bd-w)
+
 " ---------------------------------------------------------------------
 " Installing Plugins
 " - For Neovim: ~/.local/share/nvim/plugged
@@ -206,6 +210,7 @@ Plug 'tpope/vim-rails'
 Plug 'elixir-lang/vim-elixir'
 Plug 'thinca/vim-ref'
 Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
+Plug 'easymotion/vim-easymotion'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
