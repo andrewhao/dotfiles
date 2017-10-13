@@ -34,7 +34,19 @@ bind '"' split-window -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 bind c new-window -c "#{pane_current_path}"
 
+set -g default-terminal "screen-256color"
+
+# Scroll history
+set -g history-limit 100000
+
 # Powerline setup
 run-shell "powerline-daemon -q"
+
+# Turn on vi bindings in copy mode
+set-option -g status-keys vi
+set-window-option -g mode-keys vi
+
+bind-key -Tcopy-mode-vi 'v' send -X begin-selection
+bind-key -Tcopy-mode-vi 'y' send -X copy-pipe "reattach-to-user-namespace pbcopy"
 
 source-file "${HOME}/.tmux/themes/powerline-orange.tmuxtheme"
