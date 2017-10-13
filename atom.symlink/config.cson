@@ -11,6 +11,7 @@
       "linter-jshint"
       "symbols-view"
       "screen-send"
+      "linter-coffeelint"
     ]
     ignoredNames: [
       ".bundle"
@@ -27,12 +28,12 @@
     ]
   editor:
     fontFamily: "Fira Code"
-    fontSize: 13
+    fontSize: 18
     invisibles: {}
     showIndentGuide: true
     tabType: "soft"
   "elm-format":
-    binary: "/Users/andrewhao/.nodenv/shims/elm-format"
+    binary: "/Users/andrewhao/personal/prejoinin/node_modules/.bin/elm-format"
   elmjutsu:
     autocompleteDescriptionDisplay: "markdown"
     autocompleteEnabled: true
@@ -41,6 +42,9 @@
     globalAutocompleteEnabled: true
     hyperclickEnabled: true
     sidekickPosition: "right"
+  "exfmt-atom": {}
+  "git-blame":
+    columnWidth: 281
   "go-plus": {}
   iex:
     colors: {}
