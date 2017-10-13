@@ -36,4 +36,4 @@ bind c new-window -c "#{pane_current_path}"
 
 # Powerline setup
 run-shell "powerline-daemon -q"
-source "$POWERLINE_PATH/bindings/tmux/powerline.conf"
+powerline-config tmux source

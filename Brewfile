@@ -33,6 +33,7 @@ brew 'git-duet'
 brew 'avr-libc'
 brew 'dfu-programmer'
 brew 'dfu-util'
+brew 'zsh-autosuggestions'
 
 cask 'keybase'
 cask 'vagrant'
