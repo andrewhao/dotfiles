@@ -8,3 +8,10 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# fd is a nicer find
+# https://github.com/sharkdp/fd
+if $(fd &>/dev/null)
+then
+  alias find="fd"
+fi

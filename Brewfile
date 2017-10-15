@@ -34,6 +34,7 @@ brew 'avr-libc'
 brew 'dfu-programmer'
 brew 'dfu-util'
 brew 'zsh-autosuggestions'
+brew 'fd'
 
 cask 'keybase'
 cask 'vagrant'
