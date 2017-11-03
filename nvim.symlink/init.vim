@@ -212,6 +212,7 @@ Plug 'thinca/vim-ref'
 Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-rails'
+Plug 'scrooloose/nerdtree'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
@@ -220,7 +221,7 @@ Plug 'tpope/vim-rails'
 " Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " On-demand loading
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
