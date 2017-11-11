@@ -135,6 +135,9 @@ let g:neoformat_elixir_exfmt = {
 
 let g:neoformat_enabled_elixir = ['exfmt']
 
+" Rufo autoformat
+let g:rufo_auto_formatting = 1
+
 " Commenting a la NERDCommenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -213,6 +216,7 @@ Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-rails'
 Plug 'scrooloose/nerdtree'
+Plug 'ruby-formatter/rufo-vim'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
