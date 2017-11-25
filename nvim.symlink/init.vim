@@ -217,6 +217,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-rails'
 Plug 'scrooloose/nerdtree'
 Plug 'ruby-formatter/rufo-vim'
+Plug 'rizzatti/dash.vim'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
