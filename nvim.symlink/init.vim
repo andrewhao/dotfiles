@@ -135,6 +135,14 @@ let g:neoformat_elixir_exfmt = {
 
 let g:neoformat_enabled_elixir = ['exfmt']
 
+" Neoformat on save
+" augroup fmt
+"   autocmd!
+"   autocmd BufWritePre * undojoin | Neoformat
+" augroup END
+
+map <leader>f :Neoformat<cr>
+
 " Rufo autoformat
 let g:rufo_auto_formatting = 1
 
