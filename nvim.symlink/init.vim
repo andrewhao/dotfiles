@@ -65,10 +65,10 @@ set wildignore+=*node_modules/*,*_build/*,*deps/*
 autocmd FileType vim setlocal keywordprg=:help
 autocmd FileType ruby setlocal keywordprg=ri
 
-map <leader>cn :cnext<cr>
-map <leader>cp :cprev<cr>
-map <leader>co :copen<cr>
-map <leader>cc :ccl<cr>
+map <leader>qn :cnext<cr>
+map <leader>qp :cprev<cr>
+map <leader>qo :copen<cr>
+map <leader>qc :ccl<cr>
 
 "" Over-ride: Ctrl-p opens FZF
 map <C-p> :FZF<cr>
@@ -136,10 +136,10 @@ let g:neoformat_elixir_exfmt = {
 let g:neoformat_enabled_elixir = ['exfmt']
 
 " Neoformat on save
-" augroup fmt
-"   autocmd!
-"   autocmd BufWritePre * undojoin | Neoformat
-" augroup END
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
 
 map <leader>f :Neoformat<cr>
 
