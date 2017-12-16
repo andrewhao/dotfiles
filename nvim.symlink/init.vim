@@ -127,19 +127,19 @@ endif
 let test#strategy = "vimux"
 
 " Neoformat
-let g:neoformat_elixir_exfmt = {
-  \ 'exe': 'mix',
-  \ 'args': ['exfmt', '--stdin'],
-  \ 'stdin': 1
-  \ }
+" let g:neoformat_elixir_exfmt = {
+"   \ 'exe': 'mix',
+"   \ 'args': ['exfmt', '--stdin'],
+"   \ 'stdin': 1
+"   \ }
 
-let g:neoformat_enabled_elixir = ['exfmt']
+" let g:neoformat_enabled_elixir = ['exfmt']
 
 " Neoformat on save
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
+" augroup fmt
+"   autocmd!
+"   autocmd BufWritePre * undojoin | Neoformat
+" augroup END
 
 map <leader>f :Neoformat<cr>
 

@@ -28,7 +28,7 @@
     ]
   editor:
     fontFamily: "Fira Code"
-    fontSize: 18
+    fontSize: 12
     invisibles: {}
     showIndentGuide: true
     tabType: "soft"
