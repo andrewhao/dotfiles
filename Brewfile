@@ -35,6 +35,8 @@ brew 'dfu-util'
 brew 'zsh-autosuggestions'
 brew 'fd'
 brew 'watchman'
+brew 'rlwrap'
+brew 'emacs'
 
 cask 'keybase'
 cask 'vagrant'
