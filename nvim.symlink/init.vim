@@ -144,7 +144,7 @@ let test#strategy = "vimux"
 map <leader>f :Neoformat<cr>
 
 " Rufo autoformat
-let g:rufo_auto_formatting = 1
+" let g:rufo_auto_formatting = 1
 
 " Commenting a la NERDCommenter
 " Add spaces after comment delimiters by default
