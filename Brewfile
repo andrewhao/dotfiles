@@ -39,6 +39,7 @@ brew 'watchman'
 brew 'rlwrap'
 brew 'emacs'
 brew 'emacs-plus'
+brew 'zplug'
 
 cask 'keybase'
 cask 'vagrant'
