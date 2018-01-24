@@ -10,3 +10,4 @@ atom.symlink/themes
 git/gitconfig.symlink
 .DS_Store
 *~
+tmux.symlink/plugins
