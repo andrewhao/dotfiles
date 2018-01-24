@@ -1,0 +1,3 @@
+export SPACESHIP_NODE_SHOW=false
+export SPACESHIP_PACKAGE_SHOW=false
+export SPACESHIP_EXIT_CODE_SHOW=true
