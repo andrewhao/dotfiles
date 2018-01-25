@@ -14,6 +14,12 @@ If you're interested in the philosophy behind why projects like these are
 awesome, you might want to [read my post on the
 subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
+## ahao foreward:
+
+You will want to run these commands before initializing the setup...
+
+    $ git clone https://github.com/tmux-plugins/tpm tmux.symlink/plugins/tpm
+
 ## install
 
 Run this:
