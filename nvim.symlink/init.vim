@@ -70,6 +70,9 @@ map <leader>qp :cprev<cr>
 map <leader>qo :copen<cr>
 map <leader>qc :ccl<cr>
 
+map <leader>bn :bnext<cr>
+map <leader>bp :bprevious<cr>
+
 "" Over-ride: Ctrl-p opens FZF
 map <C-p> :FZF<cr>
 
@@ -141,7 +144,10 @@ let test#strategy = "vimux"
 "   autocmd BufWritePre * undojoin | Neoformat
 " augroup END
 
-map <leader>f :Neoformat<cr>
+map <leader>F :Neoformat<cr>
+
+" Search
+map <leader>f :Grepper<cr>
 
 " Rufo autoformat
 " let g:rufo_auto_formatting = 1
