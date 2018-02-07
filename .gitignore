@@ -11,3 +11,4 @@ git/gitconfig.symlink
 .DS_Store
 *~
 tmux.symlink/plugins
+emacs.d.symlink
