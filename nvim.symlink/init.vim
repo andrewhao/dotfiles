@@ -149,6 +149,10 @@ map <leader>F :Neoformat<cr>
 " Search
 map <leader>f :Grepper<cr>
 
+" NERDTree
+map <leader>nf :NERDTreeFind<cr>
+map <leader>nt :NERDTree<cr>
+
 " Rufo autoformat
 " let g:rufo_auto_formatting = 1
 
@@ -193,6 +197,9 @@ let g:elm_format_autosave = 1
 " Easymotion
 nmap <Leader>s <Plug>(easymotion-bd-f)
 nmap <Leader>w <Plug>(easymotion-bd-w)
+
+" vim-emoji
+set completefunc=emoji#complete
 
 " ---------------------------------------------------------------------
 " Installing Plugins
