@@ -1,0 +1,101 @@
+# Enable kwm compatibility mode
+# khd kwm on
+
+# set color of default mode
+# khd mode default color 0xFFD5C4A1
+khd mode default on_enter chunkc border::color 0xFF458588
+
+# Enable the prefix mode
+khd mode prefix prefix on
+khd mode prefix timeout 0.75
+khd mode prefix restore default
+khd mode prefix on_enter chunkc border::color 0xFFD5C4A1
+# khd mode resize prefix on
+# khd mode resize color 0xddbdd322
+# khd mode resize timeout 0.75
+# khd mode resize restore default
+
+# Activate prefix mode
+ctrl - i                 :   khd -e "mode activate prefix"
+# ctrl - q                 :   khd -e "mode activate resize"
+
+# Quit Kwm
+# cmd + alt + ctrl - q     :    kwmc quit
+
+# Set Space Tiling Mode To BSP
+prefix - 1           :    chunkc tiling::desktop --layout bsp
+
+# Set Space Tiling Mode To Monocle
+prefix - 2           :    chunkc tiling::desktop --layout monocle
+
+# Set Space Tiling Mode To Floating
+prefix - 3           :    chunkc tiling::desktop --layout float
+
+# Rotate Window-Tree By 90degrees (Clockwise)
+prefix - r           :    chunkc tiling::desktop --rotate 90
+
+prefix - w : chunkc tiling::window --toggle float;\
+             chunkc tiling::window --grid-layout 4:4:1:1:2:2
+
+# toggle sticky, float and resize to picture-in-picture size
+prefix - s : chunkc tiling::window --toggle sticky;\
+             hunkc tiling::window --grid-layout 5:5:4:0:1:1
+
+# Give Focus To Window
+# prefix-h                 :    kwmc window -f west
+# prefix-l                 :    kwmc window -f east
+# prefix-j                 :    kwmc window -f south
+# prefix-k                 :    kwmc window -f north
+prefix - h : chunkc tiling::window --focus west
+prefix - j : chunkc tiling::window --focus south
+prefix - k : chunkc tiling::window --focus north
+prefix - l : chunkc tiling::window --focus east
+
+# Give Focus To Monitor
+# prefix - p : chunkc tiling::monitor --focus prev
+# prefix - n : chunkc tiling::monitor --focus next
+
+# Swap Focused Window
+prefix + ctrl - h : chunkc tiling::window --swap west
+prefix + ctrl - j : chunkc tiling::window --swap south
+prefix + ctrl - k : chunkc tiling::window --swap north
+prefix + ctrl - l : chunkc tiling::window --swap east
+
+# Swap to next monitor
+prefix+ctrl-n : chunkc tiling::window --send-to-monitor next; chunkc tiling::monitor -f next
+prefix+ctrl-p : chunkc tiling::window --send-to-monitor prev; chunkc tiling::monitor -f prev
+
+# Pseudo containers
+# cmd + ctrl + alt - p     :    kwmc tree -pseudo create
+# cmd + ctrl + alt - o     :    kwmc tree -pseudo destroy
+# ctrl + alt - p           :    kwmc window -s prev
+# ctrl + alt - n           :    kwmc window -s next
+
+# Detach Focused Window And Reinsert In Direction
+# ctrl + shift - k         :    kwmc window -m north
+# ctrl + shift - l         :    kwmc window -m east
+# ctrl + shift - j         :    kwmc window -m south
+# ctrl + shift - h         :    kwmc window -m west
+
+# Set Temporary Window Container
+# prefix-f                 :    kwmc window -z fullscreen
+# prefix-d                 :    kwmc window -z parent
+# prefix-w                 :    kwmc window -t focused
+
+# Move Display Focus
+prefix-n                 :    chunkc tiling::monitor -f next
+prefix-p                 :    chunkc tiling::monitor -f prev
+
+# Modify Container
+# Actual resize commands
+prefix - left                :   chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge west
+prefix - down                :   chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge south
+prefix - up                  :   chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge north
+prefix - right               :   chunkc tiling::window --use-temporary-ratio 0.05 --adjust-window-edge east
+# prefix + shift - left        :   kwmc window -c reduce 0.05 west
+# prefix - down                :   kwmc window -c expand 0.05 south
+# prefix + shift - down        :   kwmc window -c reduce 0.05 south
+# prefix - up                  :   kwmc window -c expand 0.05 north
+# prefix + shift - up          :   kwmc window -c reduce 0.05 north
+# prefix - right               :   kwmc window -c expand 0.05 east
+# prefix + shift - right       :   kwmc window -c reduce 0.05 east
