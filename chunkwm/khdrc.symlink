@@ -3,13 +3,13 @@
 
 # set color of default mode
 # khd mode default color 0xFFD5C4A1
-# khd mode default on_enter chunkc border::color 0xFF458588; chunkc set mouse_follows_focus off
+khd mode default on_enter chunkc border::color 0xFF0F6288
 
 # Enable the prefix mode
 khd mode prefix prefix on
 khd mode prefix timeout 0.75
 khd mode prefix restore default
-# khd mode prefix on_enter chunkc border::color 0xFFD5C4A1
+khd mode prefix on_enter chunkc border::color 0xFFD5C4A1
 # khd mode resize prefix on
 # khd mode resize color 0xddbdd322
 # khd mode resize timeout 0.75
