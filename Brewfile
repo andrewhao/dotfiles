@@ -6,6 +6,7 @@ tap 'git-duet/tap'
 tap 'osx-cross/avr'
 tap 'd12frosted/emacs-plus'
 tap 'crisidev/homebrew-chunkwm'
+tap 'koekeishiya/formulae'
 
 brew 'diff-so-fancy'
 brew 'z'
