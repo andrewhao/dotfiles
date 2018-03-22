@@ -78,7 +78,7 @@ map <C-p> :FZF<cr>
 
 " ctags config
 set tags=.ctags;$HOME
-nmap <leader>tt :execute "!ctags -R --exclude=@/Users/andrewhao/.ctagsignore -f ./.ctags ."<cr>
+nmap <leader>tt :execute "!/usr/local/Cellar/ctags/5.8_1/bin/ctags -R --exclude=@/Users/andrewhao/.ctagsignore -f ./.ctags ."<cr>
 nmap gd <C-]>
 nmap gb <C-t>
 nnoremap <leader>.. :CtrlPTag<cr>
@@ -241,6 +241,7 @@ Plug 'ruby-formatter/rufo-vim'
 Plug 'rizzatti/dash.vim'
 Plug 'thiagoalessio/rainbow_levels.vim'
 Plug 'junegunn/vim-emoji'
+Plug 'slim-template/vim-slim'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
