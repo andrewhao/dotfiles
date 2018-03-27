@@ -101,7 +101,7 @@ chunkc set focused_border_skip_floating  0
 
 chunkc core::load border.so
 chunkc core::load tiling.so
-chunkc core::load ffm.so
+# chunkc core::load ffm.so
 
 #
 # NOTE: shell commands require escaped quotes
@@ -109,5 +109,6 @@ chunkc core::load ffm.so
 #
 chunkc tiling::rule --owner \"System Preferences\" --subrole AXStandardWindow --state float
 chunkc tiling::rule --owner Finder --name Copy --state float
+chunkc tiling::rule --owner Dash --state float
 chunkc tiling::rule --owner LICEcap --state float
 chunkc tiling::rule --owner \"App Store\" --state float
