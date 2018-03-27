@@ -57,11 +57,6 @@ set ttymouse=xterm2
 inoremap jkj <Esc>
 inoremap kjk <Esc>
 
-"" Powerline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-
 "" Nice powerline defaults
 let laststatus=2 " Always display the statusline in all windows
 " set showtabline=2 " Always display the tabline, even if there is only one tab
