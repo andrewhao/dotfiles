@@ -40,6 +40,7 @@ brew 'rlwrap'
 brew 'emacs'
 brew 'emacs-plus'
 brew 'zplug'
+brew 'autojump'
 
 cask 'keybase'
 cask 'vagrant'
