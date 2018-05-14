@@ -143,6 +143,7 @@ let test#strategy = "vimux"
 "   autocmd!
 "   autocmd BufWritePre * undojoin | Neoformat
 " augroup END
+let g:neoformat_enabled_ruby = ['rubocop']
 
 map <leader>F :Neoformat<cr>
 
@@ -235,13 +236,13 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'thinca/vim-ref'
 Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-rails'
 Plug 'scrooloose/nerdtree'
 Plug 'ruby-formatter/rufo-vim'
 Plug 'rizzatti/dash.vim'
 Plug 'thiagoalessio/rainbow_levels.vim'
 Plug 'junegunn/vim-emoji'
 Plug 'slim-template/vim-slim'
+Plug 'tpope/vim-surround'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
