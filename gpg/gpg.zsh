@@ -1,3 +1,3 @@
-eval $( gpg-agent --daemon -q )
+eval $( gpg-agent --daemon -q &>/dev/null)
 GPG_TTY=$(tty)
 export GPG_TTY
