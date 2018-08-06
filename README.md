@@ -60,6 +60,12 @@ After install, do this symlink:
 
     $ ln -s ~/.nvim ~/.config/nvim
 
+### Mas install from App Store
+
+Install Slack
+
+    $ mas install 803453959
+
 ## topical
 
 Everything's built around topic areas. If you're adding a new area to your
