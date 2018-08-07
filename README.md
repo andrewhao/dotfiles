@@ -66,6 +66,10 @@ Install Slack
 
     $ mas install 803453959
 
+### Install powerline
+
+
+
 ## topical
 
 Everything's built around topic areas. If you're adding a new area to your
