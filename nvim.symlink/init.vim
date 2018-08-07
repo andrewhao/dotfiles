@@ -40,7 +40,6 @@ endif
 " Search and Replace
 nmap <Leader>s :%s//g<Left><Left>
 
-
 " Tell Vim which characters to show for expanded TABs,
 " trailing whitespace, and end-of-lines. VERY useful!
 if &listchars ==# 'eol:$'
@@ -243,6 +242,7 @@ Plug 'thiagoalessio/rainbow_levels.vim'
 Plug 'junegunn/vim-emoji'
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-surround'
+Plug 'arcticicestudio/nord-vim'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
@@ -272,3 +272,6 @@ Plug 'tpope/vim-surround'
 
 " Initialize plugin system
 call plug#end()
+
+" Nord color theme
+colorscheme nord
