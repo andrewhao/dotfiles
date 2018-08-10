@@ -44,6 +44,7 @@ brew 'autojump'
 brew 'mas'
 brew 'dry'
 brew 'nodenv'
+brew 'bat'
 
 cask 'rubymine'
 cask 'keybase'
