@@ -14,15 +14,15 @@ If you're interested in the philosophy behind why projects like these are
 awesome, you might want to [read my post on the
 subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
-## ahao foreward:
+## ahao foreward (install)
 
-You will want to run these commands before initializing the setup...
+Set up Tmux:
 
     $ git clone https://github.com/tmux-plugins/tpm tmux.symlink/plugins/tpm
 
-## install
+## Installation of these dotfiles:
 
-Run this:
+Clone this repo and install with bootstrap command:
 
 ```sh
 git clone https://github.com/holman/dotfiles.git ~/.dotfiles
@@ -53,6 +53,13 @@ this script in `bin/`.
 
 Note that actual Janus plugins are managed by these dotfiles, so after you install Janus, you will need to run this repository's `script/bootstrap` script to blow away the installed Janus folder.
 
+### Run install script
+
+    $ ./scripts/ahao-install.sh
+
+### Change default shell
+
+    $ chsh -s /bin/zsh
 
 ### Neovim config symlinking
 
@@ -60,13 +67,9 @@ After install, do this symlink:
 
     $ ln -s ~/.nvim ~/.config/nvim
 
-### Mas install from App Store
+### Things that need manual installs
 
-Install Slack
-
-    $ mas install 803453959
-
-### Install powerline
+#### 1Password6
 
 
 
