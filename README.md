@@ -71,7 +71,15 @@ After install, do this symlink:
 
 #### 1Password6
 
+#### GPG
 
+Import GPG key:
+
+    $ gpg --import path/to/key.asc
+
+Tell git to use it:
+
+    $ git config --global user.signingkey KEY
 
 ## topical
 
