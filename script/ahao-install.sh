@@ -16,4 +16,5 @@ echo "Installing App Store packages..."
 mas install 803453959
 mas install 419330170
 mas install 1333542190
+mas install 497799835
 echo "Done."
