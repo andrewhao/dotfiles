@@ -15,3 +15,14 @@ if $(fd &>/dev/null)
 then
   alias find="fd"
 fi
+
+fkillport() {
+    local pid 
+
+    pid=$(echo `lsof -P -i -sTCP:LISTEN | grep LISTEN | fzf -m $FZF_COMPLETION_PTS` | tr -s '[:space:]' | cut -d' ' -f2)
+
+    if [ "x$pid" != "x" ]
+    then
+        echo $pid | xargs kill -${1:-9}
+    fi  
+}
