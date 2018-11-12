@@ -45,6 +45,8 @@ brew 'mas'
 brew 'dry'
 brew 'nodenv'
 brew 'bat'
+brew 'mycli'
+brew 'pgcli'
 
 cask 'rubymine'
 cask 'keybase'
