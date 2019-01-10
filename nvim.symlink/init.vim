@@ -77,7 +77,7 @@ map <C-p> :FZF<cr>
 
 " ctags config
 set tags=.ctags;$HOME
-nmap <leader>tt :execute "!/usr/local/Cellar/ctags/5.8_1/bin/ctags -R --exclude=@/Users/andrewhao/.ctagsignore -f ./.ctags ."<cr>
+nmap <leader>tt :execute "!/usr/local/Cellar/ctags/5.8_1/bin/ctags -R --exclude=@$HOME/.ctagsignore -f ./.ctags ."<cr>
 nmap gd <C-]>
 nmap gb <C-t>
 nnoremap <leader>.. :CtrlPTag<cr>
