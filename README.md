@@ -61,12 +61,6 @@ Note that actual Janus plugins are managed by these dotfiles, so after you insta
 
     $ chsh -s /bin/zsh
 
-### Neovim config symlinking
-
-After install, do this symlink:
-
-    $ ln -s ~/.nvim ~/.config/nvim
-
 ### Things that need manual installs
 
 * [1Password 6](https://1password.com/downloads/) [link](https://app-updates.agilebits.com/download/OPM4)
