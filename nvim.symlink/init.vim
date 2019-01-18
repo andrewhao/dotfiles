@@ -102,7 +102,7 @@ map <Leader>vz :call VimuxZoomRunner()<CR>
 
 " Use ag for vim-ack
 " https://github.com/mileszs/ack.vim#can-i-use-ag-the-silver-searcher-with-this
-let g:ackprg = 'ag --vimgrep'
+let g:ackprg = 'rg --vimgrep --no-heading'
 
 " vim-test
 nmap <silent> <leader>t :TestNearest<CR>
