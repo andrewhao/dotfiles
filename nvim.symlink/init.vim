@@ -150,7 +150,7 @@ let g:neoformat_enabled_python = ['autopep8']
 map <leader>F :Neoformat<cr>
 
 " Search
-map <leader>f :Grepper<cr>
+map <leader>f :Grepper -tool rg<cr>
 
 " NERDTree
 map <leader>nf :NERDTreeFind<cr>
