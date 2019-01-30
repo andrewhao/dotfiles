@@ -111,6 +111,10 @@ nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 
+let test#strategy = "vimux"
+let test#javascript#runner = "jest"
+
+
 " Mouse config
 set mouse=a
 
@@ -125,8 +129,6 @@ if has('persistent_undo')
   set undodir=$HOME/.undo
   set undofile
 endif
-
-let test#strategy = "vimux"
 
 " Neoformat
 " let g:neoformat_elixir_exfmt = {
@@ -143,6 +145,7 @@ let test#strategy = "vimux"
 "   autocmd BufWritePre * undojoin | Neoformat
 " augroup END
 let g:neoformat_enabled_ruby = ['rubocop']
+let g:neoformat_enabled_python = ['autopep8']
 
 map <leader>F :Neoformat<cr>
 
@@ -243,6 +246,9 @@ Plug 'junegunn/vim-emoji'
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-surround'
 Plug 'arcticicestudio/nord-vim'
+Plug 'tpope/vim-sleuth'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
