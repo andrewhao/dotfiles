@@ -204,6 +204,9 @@ nmap <Leader>w <Plug>(easymotion-bd-w)
 " vim-emoji
 set completefunc=emoji#complete
 
+
+" let g:deoplete#enable_at_startup = 1
+
 " ---------------------------------------------------------------------
 " Installing Plugins
 " - For Neovim: ~/.local/share/nvim/plugged
@@ -249,6 +252,14 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-sleuth'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'w0rp/ale'
+Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'leafgarland/typescript-vim'
+" For async completion
+Plug 'Shougo/deoplete.nvim'
+" For Denite features
+Plug 'Shougo/denite.nvim'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'

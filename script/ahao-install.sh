@@ -17,8 +17,11 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 echo "Done."
 
 echo "Installing App Store packages..."
-mas install 803453959
+# Slack... prefer to install this one from web site
+# mas install 803453959
 mas install 419330170
 mas install 1333542190
 mas install 497799835
+# Amphetamine
+mas install 937984704
 echo "Done."

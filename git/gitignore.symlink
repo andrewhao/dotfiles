@@ -2,3 +2,6 @@
 *~
 *.swp
 .ctags
+.vscode
+.node-version
+.projections.json
