@@ -10,7 +10,7 @@ tap 'homebrew/cask-fonts'
 tap 'moncho/dry'
 tap 'idleberg/dbxcli'
 
-brew 'diff-so-fancy'
+brew 'git-delta'
 brew 'z'
 brew 'neovim'
 #brew 'gpg-agent'
