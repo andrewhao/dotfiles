@@ -113,6 +113,7 @@ nmap <silent> <leader>g :TestVisit<CR>
 
 let test#strategy = "vimux"
 let test#javascript#runner = "jest"
+let g:test#javascript#jest#file_pattern = '\v(tests?/.*|(spec|test))\.(js|jsx|coffee|ts|tsx)$'
 
 
 " Mouse config
@@ -260,6 +261,9 @@ Plug 'leafgarland/typescript-vim'
 Plug 'Shougo/deoplete.nvim'
 " For Denite features
 Plug 'Shougo/denite.nvim'
+Plug 'keith/swift.vim'
+Plug 'udalov/kotlin-vim'
+Plug 'saltstack/salt-vim'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'

@@ -5,3 +5,4 @@
 .vscode
 .node-version
 .projections.json
+.swift-format
