@@ -49,6 +49,7 @@ brew 'mycli'
 brew 'pgcli'
 brew 'dbxcli'
 brew 'tldr'
+brew 'go'
 
 cask 'keybase'
 cask 'vagrant'
