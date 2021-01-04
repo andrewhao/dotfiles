@@ -27,7 +27,7 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M
 # windows. It seems that in this particular case, Screen has the better default
 # where a window is only constrained in size if a smaller client is actively
 # looking at it. This behaviour can be fixed by setting tmux's aggressive-resize option.
-setw -g aggressive-resize on
+# setw -g aggressive-resize on
 
 # Window split
 bind '"' split-window -c "#{pane_current_path}"
@@ -40,14 +40,15 @@ set -g default-terminal "screen-256color"
 set -g history-limit 100000
 
 # Powerline setup
-run-shell "powerline-daemon -q"
+# run-shell "powerline-daemon -q"
+# source "${POWERLINE_PATH}/bindings/tmux/powerline.conf"
 
 # Turn on vi bindings in copy mode
 set-option -g status-keys vi
 set-window-option -g mode-keys vi
 
 bind-key -Tcopy-mode-vi 'v' send -X begin-selection
-bind-key -Tcopy-mode-vi 'y' send -X copy-pipe "reattach-to-user-namespace pbcopy"
+# bind-key -Tcopy-mode-vi 'y' send -X copy-pipe "reattach-to-user-namespace pbcopy"
 
 # source-file "${HOME}/.tmux/themes/powerline-orange.tmuxtheme"
 
@@ -58,10 +59,12 @@ set -g @continuum-restore 'on'
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-copycat'
+set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 set -g @plugin 'arcticicestudio/nord-tmux'
 set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+set -g @plugin 'laktak/extrakto'
 
 # Other examples:
 # set -g @plugin 'github_username/plugin_name'
