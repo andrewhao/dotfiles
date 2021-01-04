@@ -68,6 +68,8 @@ Note that actual Janus plugins are managed by these dotfiles, so after you insta
 
 #### GPG
 
+Export from Keybase: https://blog.scottlowe.org/2017/09/06/using-keybase-gpg-macos/
+
 Import GPG key:
 
     $ gpg --import path/to/key.asc
